@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlikler | Dijital Girişimcilik Kulübü</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header">
+    <a href="index.html" class="brand">Dijital Girişimcilik Kulübü</a>
+    <nav aria-label="Ana menü">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="etkinlikler.html" aria-current="page">Etkinlikler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+    </nav>
+  </header>
+
+  <main class="page-transition">
+    <p class="eyebrow">GİRİŞİMCİLİK TAKVİMİ</p>
+    <h1>Gelecek Etkinlikler</h1>
+    <p class="intro">Girişimcilik yolculuğunda sana rehberlik edecek atölyeler, paneller ve ideathon buluşmaları. Aşağıdaki arama kutusunu kullanarak etkinlik başlıklarına göre filtreleme yapabilirsin.</p>
+
+    <section class="search-panel" aria-label="Etkinlik arama alanı">
+      <label for="search-input" class="search-label">Etkinlik başlığına göre ara:</label>
+      <div class="search-controls">
+        <input 
+          type="search" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Örn: Startup, Yapay Zekâ, Pitch..." 
+          autocomplete="off"
+        >
+        <button type="button" id="clear-button" class="clear-button">Temizle</button>
+      </div>
+      <p id="event-counter" class="event-counter" aria-live="polite">Toplam 6 etkinlik gösteriliyor.</p>
+    </section>
+
+    <p id="no-results-message" class="empty-state" hidden>
+      Aradığınız ifadeyle eşleşen bir etkinlik başlığı bulunamadı. Lütfen farklı bir anahtar kelime deneyin veya "Temizle" düğmesine basın.
+    </p>
+
+    <section class="grid" id="events-grid" aria-label="Kulüp etkinlikleri">
+      <article class="card event-card">
+        <p class="meta">04 KASIM 2026 / 14.00</p>
+        <h2>Yalın Startup ve Fikir Doğrulama Atölyesi</h2>
+        <p>Bir iş fikrinin pazarda karşılığı olup olmadığını kod yazmadan önce nasıl test edebileceğimizi uygulamalı örneklerle inceliyoruz.</p>
+        <p class="location-tag">📍 Yer: İİBF Konferans Salonu</p>
+      </article>
+
+      <article class="card event-card">
+        <p class="meta">11 KASIM 2026 / 15.30</p>
+        <h2>No-Code ve Yapay Zekâ ile MVP Geliştirme</h2>
+        <p>Modern yapay zekâ asistanları ve kodsuz geliştirme araçlarıyla 2 saat içinde ilk prototip ürünü yayına almayı öğreniyoruz.</p>
+        <p class="location-tag">📍 Yer: Bilgisayar Laboratuvarı B-204</p>
+      </article>
+
+      <article class="card event-card">
+        <p class="meta">18 KASIM 2026 / 13.00</p>
+        <h2>E-Ticaret ve Dijital Pazarlama Stratejileri</h2>
+        <p>Küresel pazarlara açılan dijital mağazaların kurulumu, SEO temelleri ve sosyal medya reklam optimizasyonu üzerine vaka analizleri.</p>
+        <p class="location-tag">💻 Yer: Çevrim İçi (Google Meet)</p>
+      </article>
+
+      <article class="card event-card">
+        <p class="meta">25 KASIM 2026 / 16.00</p>
+        <h2>Yatırımcı Sunumu ve Pitch Deck Hazırlama</h2>
+        <p>Melek yatırımcıların ve girişim sermayesi fonlarının dikkatini çeken 10 slaytlık etkili sunum tekniklerini birlikte tasarlıyoruz.</p>
+        <p class="location-tag">📍 Yer: Teknokent Kuluçka Merkezi</p>
+      </article>
+
+      <article class="card event-card">
+        <p class="meta">02 ARALIK 2026 / 14.00</p>
+        <h2>SaaS Gelir Modelleri ve Fiyatlandırma</h2>
+        <p>Abonelik tabanlı yazılım girişimlerinde birim ekonomisi, müşteri edinme maliyeti (CAC) ve sürdürülebilir büyüme metrikleri.</p>
+        <p class="location-tag">📍 Yer: Mühendislik Fakültesi Amfi-1</p>
+      </article>
+
+      <article class="card event-card">
+        <p class="meta">09 ARALIK 2026 / 10.00</p>
+        <h2>Kampüs Ideathon: 24 Saatlik Girişim Maratonu</h2>
+        <p>Takımını kur, kampüs sorunlarına dijital bir çözüm geliştir ve jüri karşısında sunum yaparak ödül havuzundan pay alma şansı yakala.</p>
+        <p class="location-tag">📍 Yer: Merkez Kütüphane Çalışma Alanı</p>
+      </article>
+    </section>
+
+    <p class="note">💡 Bilgi: Bu sayfadaki veriler HTML üzerinde statik olarak tutulmakta, arama ve filtreleme işlemleri ise tarayıcı üzerinde JavaScript (script.js) ile anlık çalışmaktadır.</p>
+  </main>
+
+  <footer>
+    <p>BPR201 - İnternet Tabanlı Programlama / Dijital Girişimcilik Kulübü Örnek Projesi</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
